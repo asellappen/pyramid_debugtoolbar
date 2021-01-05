@@ -24,7 +24,7 @@ matrix:
 
 install:
   - travis_retry pip install tox
-
+  - pip install flake8
 script:
   - travis_retry tox
   - tox -e flake8
